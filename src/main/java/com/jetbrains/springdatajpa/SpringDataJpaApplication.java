@@ -17,8 +17,8 @@ public class SpringDataJpaApplication {
     @Bean
     public CommandLineRunner run(EmployeeRepository repository) {
         return (args) -> {
-//            insertFourEmployees(repository);
-//            System.out.println(repository.findAll());
+            insertFourEmployees(repository);
+            System.out.println(repository.findAll());
 
             System.out.println(repository.findEmployeesByLastNameContaining(" "));
         };
